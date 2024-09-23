@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teo/Cat</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.jpeg" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.min.css">
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../assets/images/logos/1.png" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                    <ul id="sidebarnav">
+                      <li class="nav-small-cap">
+                        <i class="ti ti-menu-2 nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Menu Principal</span>
+                      </li>
+                  
+                      <li class="sidebar-item">
+                        <a class="sidebar-link" href="index.html">
+                          <span>
+                            <i class="ti ti-home"></i>
+                          </span>
+                          <span class="hide-menu">Inicio</span>
+                        </a>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Dashboard -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#dashboardSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-dashboard"></i>
+                          </span>
+                          <span class="hide-menu">Dashboard</span>
+                        </a>
+                        <ul id="dashboardSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GestionDesempeno.html" class="sidebar-link">
+                              <i class="ti ti-chart-bar"></i>
+                              <span class="hide-menu">Gestión De Desempeño</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Configuración -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#configSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-settings"></i>
+                          </span>
+                          <span class="hide-menu">Configuración</span>
+                        </a>
+                        <ul id="configSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GestiónDeRoles.html" class="sidebar-link">
+                              <i class="ti ti-user-check"></i>
+                              <span class="hide-menu">Gestión De Roles</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Usuarios -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#userSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-users"></i>
+                          </span>
+                          <span class="hide-menu">Usuarios</span>
+                        </a>
+                        <ul id="userSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GestiónDeUsuarios.html" class="sidebar-link">
+                              <i class="ti ti-user-plus"></i>
+                              <span class="hide-menu">Gestión De Usuarios</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GestiónDeAcceso.html" class="sidebar-link">
+                              <i class="ti ti-lock"></i>
+                              <span class="hide-menu">Gestión De Acceso</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Categorías -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#categoriasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-category"></i>
+                          </span>
+                          <span class="hide-menu">Categorías</span>
+                        </a>
+                        <ul id="categoriasSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="CategoriasProductos.html" class="sidebar-link">
+                              <i class="ti ti-box"></i>
+                              <span class="hide-menu">Categorías De Productos</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Compras -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#comprasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-shopping-cart"></i>
+                          </span>
+                          <span class="hide-menu">Compras</span>
+                        </a>
+                        <ul id="comprasSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GDeProductos.html" class="sidebar-link">
+                              <i class="ti ti-package"></i>
+                              <span class="hide-menu">Gestión De Productos</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeProveedores.html" class="sidebar-link">
+                              <i class="ti ti-truck-delivery"></i>
+                              <span class="hide-menu">Gestión De Proveedores</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeCompras.html" class="sidebar-link">
+                              <i class="ti ti-receipt"></i>
+                              <span class="hide-menu">Gestión De Compras</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Ventas -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#ventasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-cash"></i>
+                          </span>
+                          <span class="hide-menu">Ventas</span>
+                        </a>
+                        <ul id="ventasSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GDeClientes.html" class="sidebar-link">
+                              <i class="ti ti-user-circle"></i>
+                              <span class="hide-menu">Gestión De Clientes</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDePedidos.html" class="sidebar-link">
+                              <i class="ti ti-clipboard-list"></i>
+                              <span class="hide-menu">Gestión De Pedidos</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeVentas.html" class="sidebar-link">
+                              <i class="ti ti-report-money"></i>
+                              <span class="hide-menu">Gestión De Ventas</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeDevoluciones.html" class="sidebar-link">
+                              <i class="ti ti-arrow-back-up"></i>
+                              <span class="hide-menu">Devoluciones</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeDevoluciones2.html" class="sidebar-link">
+                              <i class="ti ti-exchange"></i>
+                              <span class="hide-menu">Devoluciones2</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!--  Sidebar End -->
+        <!--  Main wrapper -->
+        <div class="body-wrapper">
+
+            <!--  Header Start -->
+            <header class="app-header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-block d-xl-none">
+                            <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse"
+                                href="javascript:void(0)">
+                                <i class="ti ti-menu-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                                <i class="ti ti-bell-ringing"></i>
+                                <div class="notification bg-primary rounded-circle"></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+                        <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+
+                            <!-- Carrito de compras -->
+                            <li class="nav-item">
+                                <a class="nav-link nav-icon-hover" href="Carrito.html">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </a>
+                            </li>
+
+                            <!-- Perfil de usuario -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35"
+                                        class="rounded-circle">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up"
+                                    aria-labelledby="drop2">
+                                    <div class="message-body">
+                                        <a href="javascript:void(0)"
+                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            <i class="ti ti-user fs-6"></i>
+                                            <p class="mb-0 fs-3">My Profile</p>
+                                        </a>
+                                        <a href="javascript:void(0)"
+                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            <i class="ti ti-mail fs-6"></i>
+                                            <p class="mb-0 fs-3">My Account</p>
+                                        </a>
+                                        <a href="javascript:void(0)"
+                                            class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!--  Header End -->
+
+
+            <div class="container-fluid">
+
+
+
+                <div class="container">
+                    <h1>Editar Información del Proveedor</h1>
+                    <form id="edit-proveedor-form">
+                        <div class="form-group">
+                            <label for="nit">NIT de la empresa:</label>
+                            <input type="text" id="nit" name="nit" value="" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre-compania">Nombre de la compañía del proveedor:</label>
+                            <input type="text" id="nombre-compania" name="nombre-compania" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="persona-contacto">Persona de contacto:</label>
+                            <input type="text" id="persona-contacto" name="persona-contacto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Número de teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion2">Dirección #2 (Opcional):</label>
+                            <input type="text" id="direccion2" name="direccion2">
+                        </div>
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="estado">Estado / Provincia:</label>
+                            <input type="text" id="estado" name="estado" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="codigo-postal">Código postal:</label>
+                            <input type="text" id="codigo-postal" name="codigo-postal" required>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" id="cancel-btn">Cancelar</button>
+                            <button type="submit">Guardar Cambios</button>
+                        </div>
+                    </form>
+                </div>
+
+                <script src="editProveedor.js"></script>
+
+                <style>
+                    /* Basic reset */
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-family: Arial, sans-serif;
+                    }
+
+                    /* Container for the form */
+                    .container {
+                        width: 100%;
+                        max-width: 800px;
+                        margin: 50px auto;
+                        background-color: #f9f9f9;
+                        border-radius: 8px;
+                        padding: 20px;
+                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                    }
+
+                    /* Form heading */
+                    .container h1 {
+                        text-align: center;
+                        margin-bottom: 20px;
+                        color: #333;
+                    }
+
+                    /* Form group for each label/input pair */
+                    .form-group {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 15px;
+                    }
+
+                    .form-group label {
+                        margin-bottom: 5px;
+                        font-weight: bold;
+                        color: #555;
+                    }
+
+                    .form-group input[type="text"],
+                    .form-group input[type="email"],
+                    .form-group input[type="tel"] {
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        font-size: 16px;
+                    }
+
+                    /* Read-only fields */
+                    .form-group input[readonly] {
+                        background-color: #eee;
+                        cursor: not-allowed;
+                    }
+
+                    /* Form actions for buttons */
+                    .form-actions {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                    }
+
+                    .form-actions button {
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    .form-actions button#cancel-btn {
+                        background-color: #ccc;
+                        color: #333;
+                    }
+
+                    .form-actions button#cancel-btn:hover {
+                        background-color: #999;
+                    }
+
+                    .form-actions button[type="submit"] {
+                        background-color: #28a745;
+                        color: white;
+                    }
+
+                    .form-actions button[type="submit"]:hover {
+                        background-color: #218838;
+                    }
+
+                    /* Media queries for responsiveness */
+                    @media (max-width: 600px) {
+                        .container {
+                            padding: 15px;
+                        }
+
+                        .form-actions {
+                            flex-direction: column;
+                            gap: 10px;
+                        }
+                    }
+                </style>
+
+                <script>
+
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const form = document.getElementById('edit-proveedor-form');
+                        const cancelBtn = document.getElementById('cancel-btn');
+
+                        // Retrieve provider data from localStorage (or API) and populate the form
+                        const providerData = JSON.parse(localStorage.getItem('providerData'));
+                        if (providerData) {
+                            document.getElementById('nit').value = providerData.nit;
+                            document.getElementById('nombre-compania').value = providerData.nombre_compania;
+                            document.getElementById('persona-contacto').value = providerData.persona_contacto;
+                            document.getElementById('email').value = providerData.email;
+                            document.getElementById('telefono').value = providerData.telefono;
+                            document.getElementById('direccion').value = providerData.direccion;
+                            document.getElementById('direccion2').value = providerData.direccion2;
+                            document.getElementById('ciudad').value = providerData.ciudad;
+                            document.getElementById('estado').value = providerData.estado;
+                            document.getElementById('codigo-postal').value = providerData.codigo_postal;
+                        }
+
+                        // Handle form submission
+                        form.addEventListener('submit', (event) => {
+                            event.preventDefault();
+
+                            // Retrieve updated form data
+                            const updatedData = {
+                                nit: document.getElementById('nit').value,
+                                nombre_compania: document.getElementById('nombre-compania').value,
+                                persona_contacto: document.getElementById('persona-contacto').value,
+                                email: document.getElementById('email').value,
+                                telefono: document.getElementById('telefono').value,
+                                direccion: document.getElementById('direccion').value,
+                                direccion2: document.getElementById('direccion2').value,
+                                ciudad: document.getElementById('ciudad').value,
+                                estado: document.getElementById('estado').value,
+                                codigo_postal: document.getElementById('codigo-postal').value,
+                            };
+
+                            // Save updated data (e.g., send to an API or save in localStorage)
+                            localStorage.setItem('providerData', JSON.stringify(updatedData));
+
+                            alert('Proveedor actualizado con éxito');
+                            window.location.href = 'file:///C:/Users/ruben/Music/TeoCat%20sin%20controlador/TeoCat%20(1)/TeoCat/src/html/registroProveedores.html';
+                        });
+
+                        // Handle cancel button
+                        cancelBtn.addEventListener('click', () => {
+                            window.location.href = 'file:///C:/Users/ruben/Music/TeoCat%20sin%20controlador/TeoCat%20(1)/TeoCat/src/html/registroProveedores.html';
+                        });
+                    });
+
+
+
+                </script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

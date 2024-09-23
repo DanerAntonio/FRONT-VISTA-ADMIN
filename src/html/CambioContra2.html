@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forgot Password</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    
+    <!-- Cambiar Contraseña -->
+    <div class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center mt-5">
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <div class="row justify-content-center w-100">
+          <div class="col-md-8 col-lg-6 col-xxl-3">
+            <div class="card mb-0">
+              <div class="card-body">
+                <h5 class="text-center">Cambiar Contraseña</h5>
+                <form id="changePasswordForm">
+                  <div class="mb-3">
+                    <label for="newPassword" class="form-label">Ingresa nueva contraseña</label>
+                    <input type="password" class="form-control" id="newPassword" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirma tu nueva contraseña</label>
+                    <input type="password" class="form-control" id="confirmPassword" required>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary">Cambiar</button>
+                    <button type="button" class="btn btn-secondary" id="cancelButton">Cancelar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.getElementById('changePasswordForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Aquí puedes añadir la lógica para cambiar la contraseña.
+      alert('Contraseña cambiada exitosamente.');
+    });
+
+    document.getElementById('cancelButton').addEventListener('click', function() {
+      // Limpiar el formulario o redirigir según sea necesario
+      document.getElementById('changePasswordForm').reset();
+    });
+  </script>
+</body>
+
+</html>

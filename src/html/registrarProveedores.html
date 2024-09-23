@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teo/Cat</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.jpeg" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.min.css">
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../assets/images/logos/1.png" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                    <ul id="sidebarnav">
+                      <li class="nav-small-cap">
+                        <i class="ti ti-menu-2 nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Menu Principal</span>
+                      </li>
+                  
+                      <li class="sidebar-item">
+                        <a class="sidebar-link" href="index.html">
+                          <span>
+                            <i class="ti ti-home"></i>
+                          </span>
+                          <span class="hide-menu">Inicio</span>
+                        </a>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Dashboard -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#dashboardSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-dashboard"></i>
+                          </span>
+                          <span class="hide-menu">Dashboard</span>
+                        </a>
+                        <ul id="dashboardSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GestionDesempeno.html" class="sidebar-link">
+                              <i class="ti ti-chart-bar"></i>
+                              <span class="hide-menu">Gestión De Desempeño</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Configuración -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#configSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-settings"></i>
+                          </span>
+                          <span class="hide-menu">Configuración</span>
+                        </a>
+                        <ul id="configSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GestiónDeRoles.html" class="sidebar-link">
+                              <i class="ti ti-user-check"></i>
+                              <span class="hide-menu">Gestión De Roles</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Usuarios -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#userSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-users"></i>
+                          </span>
+                          <span class="hide-menu">Usuarios</span>
+                        </a>
+                        <ul id="userSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GestiónDeUsuarios.html" class="sidebar-link">
+                              <i class="ti ti-user-plus"></i>
+                              <span class="hide-menu">Gestión De Usuarios</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GestiónDeAcceso.html" class="sidebar-link">
+                              <i class="ti ti-lock"></i>
+                              <span class="hide-menu">Gestión De Acceso</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Categorías -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#categoriasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-category"></i>
+                          </span>
+                          <span class="hide-menu">Categorías</span>
+                        </a>
+                        <ul id="categoriasSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="CategoriasProductos.html" class="sidebar-link">
+                              <i class="ti ti-box"></i>
+                              <span class="hide-menu">Categorías De Productos</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Compras -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#comprasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-shopping-cart"></i>
+                          </span>
+                          <span class="hide-menu">Compras</span>
+                        </a>
+                        <ul id="comprasSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GDeProductos.html" class="sidebar-link">
+                              <i class="ti ti-package"></i>
+                              <span class="hide-menu">Gestión De Productos</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeProveedores.html" class="sidebar-link">
+                              <i class="ti ti-truck-delivery"></i>
+                              <span class="hide-menu">Gestión De Proveedores</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeCompras.html" class="sidebar-link">
+                              <i class="ti ti-receipt"></i>
+                              <span class="hide-menu">Gestión De Compras</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Ventas -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#ventasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-cash"></i>
+                          </span>
+                          <span class="hide-menu">Ventas</span>
+                        </a>
+                        <ul id="ventasSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GDeClientes.html" class="sidebar-link">
+                              <i class="ti ti-user-circle"></i>
+                              <span class="hide-menu">Gestión De Clientes</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDePedidos.html" class="sidebar-link">
+                              <i class="ti ti-clipboard-list"></i>
+                              <span class="hide-menu">Gestión De Pedidos</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeVentas.html" class="sidebar-link">
+                              <i class="ti ti-report-money"></i>
+                              <span class="hide-menu">Gestión De Ventas</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeDevoluciones.html" class="sidebar-link">
+                              <i class="ti ti-arrow-back-up"></i>
+                              <span class="hide-menu">Devoluciones</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeDevoluciones2.html" class="sidebar-link">
+                              <i class="ti ti-exchange"></i>
+                              <span class="hide-menu">Devoluciones2</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!--  Sidebar End -->
+        <!--  Main wrapper -->
+        <div class="body-wrapper">
+
+            <!--  Header Start -->
+            <header class="app-header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-block d-xl-none">
+                            <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse"
+                                href="javascript:void(0)">
+                                <i class="ti ti-menu-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                                <i class="ti ti-bell-ringing"></i>
+                                <div class="notification bg-primary rounded-circle"></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+                        <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+
+                            <!-- Carrito de compras -->
+                            <li class="nav-item">
+                                <a class="nav-link nav-icon-hover" href="Carrito.html">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </a>
+                            </li>
+
+                            <!-- Perfil de usuario -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35"
+                                        class="rounded-circle">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up"
+                                    aria-labelledby="drop2">
+                                    <div class="message-body">
+                                        <a href="javascript:void(0)"
+                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            <i class="ti ti-user fs-6"></i>
+                                            <p class="mb-0 fs-3">My Profile</p>
+                                        </a>
+                                        <a href="javascript:void(0)"
+                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            <i class="ti ti-mail fs-6"></i>
+                                            <p class="mb-0 fs-3">My Account</p>
+                                        </a>
+                                        <a href="javascript:void(0)"
+                                            class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!--  Header End -->
+
+
+            <div class="container-fluid">
+
+
+                <form class="form-proveedor">
+                    <h2>Formulario de información del Proveedor</h2>
+
+                    <div class="form-group">
+                        <label for="nombre_compania">Nombre de la compañía del proveedor</label>
+                        <input type="text" id="nombre_compania" placeholder="Añade nombre de la compañía válido">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" id="direccion" placeholder="Añade dirección válida">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="persona_contacto">Persona de contacto</label>
+                        <input type="text" id="persona_contacto" placeholder="Añade persona de contacto válida">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="direccion2">Dirección #2</label>
+                        <input type="text" id="direccion2" placeholder="Añade segunda dirección (opcional)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="ejemplo: ejemplo@ejemplo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad</label>
+                        <select id="ciudad">
+                            <option value="" disabled selected>Ciudad</option>
+                            <!-- Add city options here -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">Estado / Provincia</label>
+                        <select id="estado">
+                            <option value="" disabled selected>Estado/Departamento</option>
+                            <!-- Add state options here -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Número de teléfono</label>
+                        <input type="tel" id="telefono" placeholder="Añade número de teléfono válido">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nit">NIT de la empresa</label>
+                        <input type="text" id="nit" placeholder="Añade NIT válido">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="codigo_postal">Código postal</label>
+                        <input type="text" id="codigo_postal" placeholder="Añade código postal válido">
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="cancelar">Cancelar</button>
+
+                            <button href="./GDeProveedores.html"  type="submit" class="anadir">Añadir</button>
+                       
+                    </div>
+                </form>
+
+
+
+
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f4f4f4;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+
+                    .container {
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        width: 600px;
+                    }
+
+                    .form-proveedor h2 {
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+
+                    .form-group {
+                        margin-bottom: 15px;
+                    }
+
+                    .form-group label {
+                        display: block;
+                        margin-bottom: 5px;
+                    }
+
+                    .form-group input,
+                    .form-group select {
+                        width: calc(100% - 12px);
+                        padding: 6px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                    }
+
+                    .form-group input::placeholder {
+                        color: #999;
+                    }
+
+                    .form-actions {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+
+                    .form-actions button {
+                        padding: 8px 16px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+
+                    .form-actions .cancelar {
+                        background-color: #d9534f;
+                        color: white;
+                        margin-right: 10px;
+                    }
+
+                    .form-actions .anadir {
+                        background-color: #5cb85c;
+                        color: white;
+                    }
+
+                    .form-group select {
+                        padding: 8px;
+                    }
+                </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <script src="../assets/js/libs/jquery.min.js"></script>
+        <script src="../assets/js/libs/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/libs/simplebar.min.js"></script>
+        <script src="../assets/js/libs/sidebar-menu.js"></script>
+        <script src="../assets/js/libs/apexcharts.min.js"></script>
+        <script src="../assets/js/libs/sparkline.js"></script>
+        <script src="../assets/js/libs/feather.min.js"></script>
+        <script src="../assets/js/libs/chartist.min.js"></script>
+        <script src="../assets/js/libs/peity.min.js"></script>
+        <script src="../assets/js/libs/slick.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

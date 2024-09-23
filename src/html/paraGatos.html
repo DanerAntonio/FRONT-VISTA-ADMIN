@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teo/Cat</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.min.css">
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                    <ul id="sidebarnav">
+                      <li class="nav-small-cap">
+                        <i class="ti ti-menu-2 nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Menu Principal</span>
+                      </li>
+                  
+                      <li class="sidebar-item">
+                        <a class="sidebar-link" href="index.html">
+                          <span>
+                            <i class="ti ti-home"></i>
+                          </span>
+                          <span class="hide-menu">Inicio</span>
+                        </a>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Dashboard -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#dashboardSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-dashboard"></i>
+                          </span>
+                          <span class="hide-menu">Dashboard</span>
+                        </a>
+                        <ul id="dashboardSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GestionDesempeno.html" class="sidebar-link">
+                              <i class="ti ti-chart-bar"></i>
+                              <span class="hide-menu">Gestión De Desempeño</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Configuración -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#configSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-settings"></i>
+                          </span>
+                          <span class="hide-menu">Configuración</span>
+                        </a>
+                        <ul id="configSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GestiónDeRoles.html" class="sidebar-link">
+                              <i class="ti ti-user-check"></i>
+                              <span class="hide-menu">Gestión De Roles</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Usuarios -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#userSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-users"></i>
+                          </span>
+                          <span class="hide-menu">Usuarios</span>
+                        </a>
+                        <ul id="userSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GestiónDeUsuarios.html" class="sidebar-link">
+                              <i class="ti ti-user-plus"></i>
+                              <span class="hide-menu">Gestión De Usuarios</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GestiónDeAcceso.html" class="sidebar-link">
+                              <i class="ti ti-lock"></i>
+                              <span class="hide-menu">Gestión De Acceso</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Categorías -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#categoriasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-category"></i>
+                          </span>
+                          <span class="hide-menu">Categorías</span>
+                        </a>
+                        <ul id="categoriasSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="CategoriasProductos.html" class="sidebar-link">
+                              <i class="ti ti-box"></i>
+                              <span class="hide-menu">Categorías De Productos</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Compras -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#comprasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-shopping-cart"></i>
+                          </span>
+                          <span class="hide-menu">Compras</span>
+                        </a>
+                        <ul id="comprasSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GDeProductos.html" class="sidebar-link">
+                              <i class="ti ti-package"></i>
+                              <span class="hide-menu">Gestión De Productos</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeProveedores.html" class="sidebar-link">
+                              <i class="ti ti-truck-delivery"></i>
+                              <span class="hide-menu">Gestión De Proveedores</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeCompras.html" class="sidebar-link">
+                              <i class="ti ti-receipt"></i>
+                              <span class="hide-menu">Gestión De Compras</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><hr /></li>
+                  
+                      <!-- Ventas -->
+                      <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow" href="#ventasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                          <span>
+                            <i class="ti ti-cash"></i>
+                          </span>
+                          <span class="hide-menu">Ventas</span>
+                        </a>
+                        <ul id="ventasSubmenu" class="collapse first-level">
+                          <li class="sidebar-item">
+                            <a href="GDeClientes.html" class="sidebar-link">
+                              <i class="ti ti-user-circle"></i>
+                              <span class="hide-menu">Gestión De Clientes</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDePedidos.html" class="sidebar-link">
+                              <i class="ti ti-clipboard-list"></i>
+                              <span class="hide-menu">Gestión De Pedidos</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeVentas.html" class="sidebar-link">
+                              <i class="ti ti-report-money"></i>
+                              <span class="hide-menu">Gestión De Ventas</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeDevoluciones.html" class="sidebar-link">
+                              <i class="ti ti-arrow-back-up"></i>
+                              <span class="hide-menu">Devoluciones</span>
+                            </a>
+                          </li>
+                          <li class="sidebar-item">
+                            <a href="GDeDevoluciones2.html" class="sidebar-link">
+                              <i class="ti ti-exchange"></i>
+                              <span class="hide-menu">Devoluciones2</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!--  Sidebar End -->
+        <!--  Main wrapper -->
+        <div class="body-wrapper">
+
+
+            <div class="container-fluid">
+
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f4f4f4;
+                    }
+
+                    .container {
+                        margin-top: 20px;
+                    }
+
+                    .details-card {
+                        background-color: #fff;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                    }
+
+                    h1 {
+                        margin-bottom: 20px;
+                        color: #333;
+                    }
+
+                    .btn-back {
+                        margin-top: 20px;
+                    }
+
+                    .btn-add-product {
+                        margin-bottom: 20px;
+                    }
+
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 10px;
+                    }
+
+                    table th,
+                    table td {
+                        padding: 12px;
+                        border: 1px solid #ccc;
+                        text-align: left;
+                    }
+
+                    table th {
+                        background-color: #e9ecef;
+                    }
+                </style>
+                </head>
+
+                <body>
+                    <div class="container">
+                        <div class="details-card">
+                            <h1>Detalles de la Categoría</h1>
+                            <div id="categoryDetails">
+                                <p><strong>Id:</strong> <span id="categoryId">1</span></p>
+                                <p><strong>Nombre de Categoría:</strong> <span id="categoryName">Para gatos</span></p>
+                                <p><strong>Descripción:</strong> <span id="categoryDescription">Categoría para productos
+                                        para
+                                        gatos.</span></p>
+                            </div>
+                            <a href="index.html" class="btn btn-primary btn-back">Volver</a>
+                            <button class="btn btn-success btn-add-product"
+                                onclick="window.location.href='agregarProducto.html?id=1'">Añadir Producto</button>
+                            <h2>Productos en esta Categoría</h2>
+                            <table id="productsTable">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Nombre del Producto</th>
+                                        <th>Descripción</th>
+                                        <th>Precio</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>101</td>
+                                        <td>Comida para Gatos</td>
+                                        <td>Comida balanceada para gatos adultos.</td>
+                                        <td>$25.00</td>
+                                        <td>
+                                            <button class="btn btn-info btn-sm"
+                                                onclick="editProduct(101)">Editar</button>
+                                            <button class="btn btn-danger btn-sm"
+                                                onclick="deleteProduct(101)">Eliminar</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>102</td>
+                                        <td>Juguete para Gatos</td>
+                                        <td>Juguete interactivo para gatos.</td>
+                                        <td>$15.00</td>
+                                        <td>
+                                            <button class="btn btn-info btn-sm"
+                                                onclick="editProduct(102)">Editar</button>
+                                            <button class="btn btn-danger btn-sm"
+                                                onclick="deleteProduct(102)">Eliminar</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Custom JS -->
+                    <script>
+                        // Example functions for button actions
+                        function editProduct(productId) {
+                            alert('Edit product with ID: ' + productId);
+                            // Add your editing logic here
+                        }
+
+                        function deleteProduct(productId) {
+                            const confirmation = confirm('Are you sure you want to delete product with ID: ' + productId + '?');
+                            if (confirmation) {
+                                // Remove the product from the table
+                                const row = document.querySelector(`#productsTable tbody tr td:first-child:contains('${productId}')`).parentElement;
+                                row.remove();
+                                // Add your deletion logic here
+                            }
+                        }
+                    </script>
+
+
+
+                    <script src="../assets/js/libs/jquery.min.js"></script>
+                    <script src="../assets/js/libs/bootstrap.bundle.min.js"></script>
+                    <script src="../assets/js/libs/simplebar.min.js"></script>
+                    <script src="../assets/js/libs/sidebar-menu.js"></script>
+                    <script src="../assets/js/libs/apexcharts.min.js"></script>
+                    <script src="../assets/js/libs/sparkline.js"></script>
+                    <script src="../assets/js/libs/feather.min.js"></script>
+                    <script src="../assets/js/libs/chartist.min.js"></script>
+                    <script src="../assets/js/libs/peity.min.js"></script>
+                    <script src="../assets/js/libs/slick.min.js"></script>
+                    <script src="../assets/js/main.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+                </body>
+
+
+
+
+
+</html>

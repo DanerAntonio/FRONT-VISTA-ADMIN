@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aplicación de gestión de usuarios y configuraciones.">
+  <meta name="keywords" content="gestión, usuarios, configuración">
+  <title>Teo/Cat</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.jpeg" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.min.css">
+  <style>
+    /* Estilos para el perfil */
+    .profile-section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .profile-img-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .profile-img-container img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .btn-change-image {
+      margin-top: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .btn-save,
+    .btn-cancel {
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .profile-img-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../assets/images/logos/1.png" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8" aria-label="Cerrar menú"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation -->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-menu-2 nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Menu Principal</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="index.html">
+                <span>
+                  <i class="ti ti-home" aria-label="Inicio"></i>
+                </span>
+                <span class="hide-menu">Inicio</span>
+              </a>
+            </li>
+            <li><hr /></li>
+            <!-- Dashboard -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#dashboardSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-dashboard"></i>
+                </span>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+              <ul id="dashboardSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="GestionDesempeno.html" class="sidebar-link">
+                    <i class="ti ti-chart-bar"></i>
+                    <span class="hide-menu">Gestión De Desempeño</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><hr /></li>
+            <!-- Configuración -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#configSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-settings"></i>
+                </span>
+                <span class="hide-menu">Configuración</span>
+              </a>
+              <ul id="configSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="GestiónDeRoles.html" class="sidebar-link">
+                    <i class="ti ti-user-check"></i>
+                    <span class="hide-menu">Gestión De Roles</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><hr /></li>
+            <!-- Usuarios -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#userSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-users"></i>
+                </span>
+                <span class="hide-menu">Usuarios</span>
+              </a>
+              <ul id="userSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="GestiónDeUsuarios.html" class="sidebar-link">
+                    <i class="ti ti-user-plus"></i>
+                    <span class="hide-menu">Gestión De Usuarios</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GestiónDeAcceso.html" class="sidebar-link">
+                    <i class="ti ti-lock"></i>
+                    <span class="hide-menu">Gestión De Acceso</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><hr /></li>
+            <!-- Categorías -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#categoriasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-category"></i>
+                </span>
+                <span class="hide-menu">Categorías</span>
+              </a>
+              <ul id="categoriasSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="CategoriasProductos.html" class="sidebar-link">
+                    <i class="ti ti-box"></i>
+                    <span class="hide-menu">Categorías De Productos</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><hr /></li>
+            <!-- Compras -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#comprasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-shopping-cart"></i>
+                </span>
+                <span class="hide-menu">Compras</span>
+              </a>
+              <ul id="comprasSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="GDeProductos.html" class="sidebar-link">
+                    <i class="ti ti-package"></i>
+                    <span class="hide-menu">Gestión De Productos</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDeProveedores.html" class="sidebar-link">
+                    <i class="ti ti-truck-delivery"></i>
+                    <span class="hide-menu">Gestión De Proveedores</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDeCompras.html" class="sidebar-link">
+                    <i class="ti ti-receipt"></i>
+                    <span class="hide-menu">Gestión De Compras</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><hr /></li>
+            <!-- Ventas -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#ventasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-cash"></i>
+                </span>
+                <span class="hide-menu">Ventas</span>
+              </a>
+              <ul id="ventasSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="GDeClientes.html" class="sidebar-link">
+                    <i class="ti ti-user-circle"></i>
+                    <span class="hide-menu">Gestión De Clientes</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDePedidos.html" class="sidebar-link">
+                    <i class="ti ti-clipboard-list"></i>
+                    <span class="hide-menu">Gestión De Pedidos</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDeVentas.html" class="sidebar-link">
+                    <i class="ti ti-report-money"></i>
+                    <span class="hide-menu">Gestión De Ventas</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDeDevoluciones.html" class="sidebar-link">
+                    <i class="ti ti-arrow-back-up"></i>
+                    <span class="hide-menu">Devoluciones</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDeFacturas.html" class="sidebar-link">
+                    <i class="ti ti-file-invoice"></i>
+                    <span class="hide-menu">Facturas</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><hr /></li>
+            <!-- Reportes -->
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="reportes.html">
+                <span>
+                  <i class="ti ti-file-report"></i>
+                </span>
+                <span class="hide-menu">Reportes</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll -->
+       
+    </aside>
+    <!-- Sidebar End -->
+    <!-- Main wrapper -->
+    <div class="body-wrapper">
+      <!-- Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2" aria-label="Abrir menú"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                <i class="ti ti-bell-ringing" aria-label="Notificaciones"></i>
+                <div class="notification bg-primary rounded-circle"></div>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link nav-icon-hover" href="Carrito.html" aria-label="Carrito de compras">
+                  <i class="ti ti-shopping-cart"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                  aria-expanded="false" aria-label="Perfil de usuario">
+                  <img src="../assets/images/profile/user-1.jpg" alt="Imagen de perfil" width="35" height="35" class="rounded-circle">
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                  <div class="message-body">
+                    <a href="perfil.html" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-user fs-6"></i>
+                      <p class="mb-0 fs-3">Mi Perfil</p>
+                    </a>
+                    <a href="Login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Cerrar Sesión</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Header End -->
+       
+      <div class="container-fluid"></div>
+
+      <!-- Perfil Section -->
+      <div class="profile-section container mt-4">
+        <h2 class="mb-4">Perfil De Aministrador</h2>
+        <div class="admin-info card mb-4">
+          <div class="card-body">
+            <div class="profile-img-container">
+              <img id="profileImage" src="../assets/images/profile/user-1.jpg" alt="Imagen de perfil" class="img-fluid">
+              <div>
+                <h3 id="displayAdminName" class="mb-2">Nombre del Administrador</h3>
+                <p id="displayAdminEmail" class="text-muted">admin@example.com</p>
+                <button type="button" class="btn btn-primary btn-change-image" onclick="changeImage()">Cambiar Imagen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="profileForm" onsubmit="return false;" class="card">
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="firstName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Juan" required>
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Pérez" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="juan.perez@example.com" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña Actual</label>
+              <input type="password" class="form-control" id="password" placeholder="**" required>
+            </div>
+            <div class="mb-3">
+              <label for="newPassword" class="form-label">Nueva Contraseña</label>
+              <input type="password" class="form-control" id="newPassword" placeholder="**">
+            </div>
+            <div class="mb-3">
+              <label for="repeatPassword" class="form-label">Repetir Nueva Contraseña</label>
+              <input type="password" class="form-control" id="repeatPassword" placeholder="**">
+            </div>
+            <button type="button" class="btn btn-success btn-save" onclick="saveProfile()">Guardar Cambios</button>
+            <button type="button" class="btn btn-secondary btn-cancel" onclick="cancelChanges()">Cancelar</button>
+          </div>
+        </form>
+      </div>
+      <!-- End Perfil Section -->
+
+      <!-- Asegúrate de incluir SweetAlert2 en tu proyecto -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+<script>
+  // Cambiar la imagen de perfil
+  function changeImage() {
+    const input = document.createElement('input'); // Crear un input de tipo file
+    input.type = 'file';
+    input.accept = 'image/*';
+
+    // Evento para manejar la selección de una imagen
+    input.onchange = function(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader(); // Crear un nuevo objeto FileReader
+        reader.onload = function(e) {
+          // Cuando se carga la imagen, actualizar el src del img
+          const imgElement = document.getElementById('profileImage');
+          imgElement.src = e.target.result;
+          localStorage.setItem('profileImage', e.target.result); // Guardar la imagen en localStorage
+        };
+        reader.readAsDataURL(file); // Leer el archivo como URL de datos
+      }
+    };
+
+    input.click(); // Simular un clic en el input para abrir el selector de archivos
+  }
+
+  // Al cargar la página, verificar si hay una imagen en localStorage
+  window.onload = function() {
+    const storedImage = localStorage.getItem('profileImage');
+    if (storedImage) {
+      document.getElementById('profileImage').src = storedImage; // Cargar la imagen almacenada
+    }
+
+    // Cargar los datos del perfil desde localStorage
+    loadProfileData();
+  };
+
+  // Guardar los cambios en el perfil
+  function saveProfile() {
+    const firstName = document.getElementById('firstName').value.trim();
+    const lastName = document.getElementById('lastName').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    // Guardar datos en localStorage
+    localStorage.setItem('adminName', firstName + ' ' + lastName);
+    localStorage.setItem('adminEmail', email);
+
+    // Mostrar los datos en la sección de información
+    document.getElementById('displayAdminName').innerText = firstName + ' ' + lastName;
+    document.getElementById('displayAdminEmail').innerText = email;
+
+    // Usar SweetAlert2 para mostrar un mensaje de éxito
+    Swal.fire({
+      icon: 'success',
+      title: '¡Éxito!',
+      text: 'Perfil guardado correctamente.',
+      confirmButtonText: 'Aceptar'
+    });
+  }
+
+  // Cargar los datos del perfil desde localStorage
+  function loadProfileData() {
+    const storedName = localStorage.getItem('adminName');
+    const storedEmail = localStorage.getItem('adminEmail');
+
+    if (storedName) {
+      const [firstName, lastName] = storedName.split(' ');
+      document.getElementById('firstName').value = firstName;
+      document.getElementById('lastName').value = lastName;
+    }
+
+    if (storedEmail) {
+      document.getElementById('email').value = storedEmail;
+      document.getElementById('displayAdminEmail').innerText = storedEmail;
+    }
+  }
+
+  // Cancelar cambios realizados en el perfil
+  function cancelChanges() {
+    loadProfileData(); // Restablecer los datos del formulario a los valores almacenados
+
+    // Usar SweetAlert2 para mostrar un mensaje de cancelación
+    Swal.fire({
+      icon: 'info',
+      title: 'Cancelado',
+      text: 'Cambios cancelados.',
+      confirmButtonText: 'Aceptar'
+    });
+  }
+</script>
+
+    </div>
+    <!-- End Main wrapper -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

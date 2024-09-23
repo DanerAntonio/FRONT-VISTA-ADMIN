@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teo/Cat</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.jpeg" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.min.css">
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../assets/images/logos/1.png" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-menu-2 nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Menu Principal</span>
+            </li>
+        
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="index.html">
+                <span>
+                  <i class="ti ti-home"></i>
+                </span>
+                <span class="hide-menu">Inicio</span>
+              </a>
+            </li>
+            <li><hr /></li>
+        
+            <!-- Dashboard -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#dashboardSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-dashboard"></i>
+                </span>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+              <ul id="dashboardSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="GestionDesempeno.html" class="sidebar-link">
+                    <i class="ti ti-chart-bar"></i>
+                    <span class="hide-menu">Gestión De Desempeño</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><hr /></li>
+        
+            <!-- Configuración -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#configSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-settings"></i>
+                </span>
+                <span class="hide-menu">Configuración</span>
+              </a>
+              <ul id="configSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="GestiónDeRoles.html" class="sidebar-link">
+                    <i class="ti ti-user-check"></i>
+                    <span class="hide-menu">Gestión De Roles</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><hr /></li>
+        
+            <!-- Usuarios -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#userSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-users"></i>
+                </span>
+                <span class="hide-menu">Usuarios</span>
+              </a>
+              <ul id="userSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="GestiónDeUsuarios.html" class="sidebar-link">
+                    <i class="ti ti-user-plus"></i>
+                    <span class="hide-menu">Gestión De Usuarios</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GestiónDeAcceso.html" class="sidebar-link">
+                    <i class="ti ti-lock"></i>
+                    <span class="hide-menu">Gestión De Acceso</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><hr /></li>
+        
+            <!-- Categorías -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#categoriasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-category"></i>
+                </span>
+                <span class="hide-menu">Categorías</span>
+              </a>
+              <ul id="categoriasSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="CategoriasProductos.html" class="sidebar-link">
+                    <i class="ti ti-box"></i>
+                    <span class="hide-menu">Categorías De Productos</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><hr /></li>
+        
+            <!-- Compras -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#comprasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-shopping-cart"></i>
+                </span>
+                <span class="hide-menu">Compras</span>
+              </a>
+              <ul id="comprasSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="GDeProductos.html" class="sidebar-link">
+                    <i class="ti ti-package"></i>
+                    <span class="hide-menu">Gestión De Productos</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDeProveedores.html" class="sidebar-link">
+                    <i class="ti ti-truck-delivery"></i>
+                    <span class="hide-menu">Gestión De Proveedores</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDeCompras.html" class="sidebar-link">
+                    <i class="ti ti-receipt"></i>
+                    <span class="hide-menu">Gestión De Compras</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><hr /></li>
+        
+            <!-- Ventas -->
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#ventasSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                <span>
+                  <i class="ti ti-cash"></i>
+                </span>
+                <span class="hide-menu">Ventas</span>
+              </a>
+              <ul id="ventasSubmenu" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="GDeClientes.html" class="sidebar-link">
+                    <i class="ti ti-user-circle"></i>
+                    <span class="hide-menu">Gestión De Clientes</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDePedidos.html" class="sidebar-link">
+                    <i class="ti ti-clipboard-list"></i>
+                    <span class="hide-menu">Gestión De Pedidos</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDeVentas.html" class="sidebar-link">
+                    <i class="ti ti-report-money"></i>
+                    <span class="hide-menu">Gestión De Ventas</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDeDevoluciones.html" class="sidebar-link">
+                    <i class="ti ti-arrow-back-up"></i>
+                    <span class="hide-menu">Devoluciones</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="GDeDevoluciones2.html" class="sidebar-link">
+                    <i class="ti ti-exchange"></i>
+                    <span class="hide-menu">Devoluciones2</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                <i class="ti ti-bell-ringing"></i>
+                <div class="notification bg-primary rounded-circle"></div>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+
+              <!-- Carrito de compras -->
+              <li class="nav-item">
+                <a class="nav-link nav-icon-hover" href="Carrito.html">
+                  <i class="ti ti-shopping-cart"></i>
+                </a>
+              </li>
+
+              <!-- Perfil de usuario -->
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                  <div class="message-body">
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-user fs-6"></i>
+                      <p class="mb-0 fs-3">My Profile</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-mail fs-6"></i>
+                      <p class="mb-0 fs-3">My Account</p>
+                    </a>
+                    <a href="javascript:void(0)" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--  Header End -->
+
+
+      <div class="container-fluid">
+
+
+
+
+
+
+        <style>
+          /* Reset */
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+          }
+
+          .container-fluid {
+            width: 90%;
+            margin: 20px auto;
+          }
+
+          /* Main section styles */
+          main {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+          }
+
+          h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+          }
+
+          .search-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+          }
+
+          .search-bar input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+          }
+
+          .search-bar button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+          }
+
+          .search-bar button:hover {
+            background-color: #0056b3;
+          }
+
+          /* Table styles */
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+          }
+
+          table th,
+          table td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+          }
+
+          table th {
+            background-color: #e9ecef;
+          }
+
+          .actions button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-right: 5px;
+          }
+
+          .actions img {
+            width: 20px;
+            height: 20px;
+          }
+
+          .actions .viewDetailsBtn {
+            margin-left: 5px;
+          }
+
+          /* Switch styles */
+          .switch {
+            position: relative;
+            display: inline-block;
+            width: 34px;
+            height: 20px;
+          }
+
+          .switch input {
+            display: none;
+          }
+
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+          }
+
+          .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+          }
+
+          input:checked+.slider {
+            background-color: #28a745;
+          }
+
+          input:checked+.slider:before {
+            transform: translateX(14px);
+          }
+        </style>
+        </head>
+
+        <body>
+          <div class="container-fluid">
+            <main>
+              <h1>Registro Categorías</h1>
+              <div class="search-bar">
+                <input type="text" id="search" placeholder="Buscar">
+                <a href="./nuevaCategoriaProductos.html">
+                  <button type="button" id="newCategoryBtn">Nuevo+</button>
+                </a>
+              </div>
+              <table id="categoryTable">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Nombre de Categoría</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Para gatos</td>
+                    <td class="actions">
+
+                      <a href="./paraGatos.html">
+                        <button class="viewDetailsBtn"><img src="view-details-icon.png" alt="Ver Detalles"></button>
+                      </a>
+
+                      <button class="editBtn"><img src="edit-icon.png" alt="Editar"></button>
+
+
+
+                      <button class="deleteBtn"><img src="delete-icon.png" alt="Eliminar"></button>
+
+
+
+                      <label class="switch">
+                        <input type="checkbox" class="statusToggle">
+                        <span class="slider"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Para perros</td>
+                    <td class="actions">
+                      <button class="viewDetailsBtn"><img src="view-details-icon.png" alt="Ver Detalles"></button>
+                      <button class="editBtn"><img src="edit-icon.png" alt="Editar"></button>
+                      <button class="deleteBtn"><img src="delete-icon.png" alt="Eliminar"></button>
+                      <label class="switch">
+                        <input type="checkbox" class="statusToggle">
+                        <span class="slider"></span>
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </main>
+          </div>
+
+          <!-- Bootstrap JS and dependencies -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+          <!-- Custom JS -->
+          <script>
+            // Handle 'Nuevo+' button click
+            document.getElementById('newCategoryBtn').addEventListener('click', function () {
+              window.location.href = 'C:/Users/ruben/Music/TeoCat sin controlador/TeoCat (1)/TeoCat/src/html/registrarProveedores.HTML';
+            });
+
+            // Handle Edit button click
+            document.querySelectorAll('.editBtn').forEach(button => {
+              button.addEventListener('click', function () {
+                const row = this.closest('tr');
+                const categoryId = row.children[0].textContent;
+                alert('Edit category with ID: ' + categoryId);
+                // Add your editing logic here, e.g., opening an edit form
+              });
+            });
+
+            // Handle Delete button click
+            document.querySelectorAll('.deleteBtn').forEach(button => {
+              button.addEventListener('click', function () {
+                const row = this.closest('tr');
+                const categoryId = row.children[0].textContent;
+                const confirmation = confirm('Are you sure you want to delete category with ID: ' + categoryId + '?');
+                if (confirmation) {
+                  row.remove();
+                  // Add your deletion logic here, e.g., sending a request to the server
+                }
+              });
+            });
+
+            // Handle View Details button click
+            document.querySelectorAll('.viewDetailsBtn').forEach(button => {
+              button.addEventListener('click', function () {
+                const row = this.closest('tr');
+                const categoryId = row.children[0].textContent;
+                alert('View details for category with ID: ' + categoryId);
+                // Add your view details logic here
+              });
+            });
+
+            // Handle Status toggle switch
+            document.querySelectorAll('.statusToggle').forEach(toggle => {
+              toggle.addEventListener('change', function () {
+                const row = this.closest('tr');
+                const categoryId = row.children[0].textContent;
+                if (this.checked) {
+                  alert('Category with ID ' + categoryId + ' is now active.');
+                  // Add your activation logic here
+                } else {
+                  alert('Category with ID ' + categoryId + ' is now inactive.');
+                  // Add your deactivation logic here
+                }
+              });
+            });
+
+            // Handle search functionality
+            document.getElementById('search').addEventListener('input', function () {
+              const filter = this.value.toLowerCase();
+              const rows = document.querySelectorAll('#categoryTable tbody tr');
+              rows.forEach(row => {
+                const categoryName = row.children[1].textContent.toLowerCase();
+                if (categoryName.includes(filter)) {
+                  row.style.display = '';
+                } else {
+                  row.style.display = 'none';
+                }
+              });
+            });
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="../assets/js/libs/jquery.min.js"></script>
+    <script src="../assets/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/libs/simplebar.min.js"></script>
+    <script src="../assets/js/libs/sidebar-menu.js"></script>
+    <script src="../assets/js/libs/apexcharts.min.js"></script>
+    <script src="../assets/js/libs/sparkline.js"></script>
+    <script src="../assets/js/libs/feather.min.js"></script>
+    <script src="../assets/js/libs/chartist.min.js"></script>
+    <script src="../assets/js/libs/peity.min.js"></script>
+    <script src="../assets/js/libs/slick.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
